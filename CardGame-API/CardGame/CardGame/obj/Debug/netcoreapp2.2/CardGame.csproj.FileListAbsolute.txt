@@ -1,0 +1,11 @@
+C:\Data\source\repos\CardGame\CardGame-API\CardGame\CardGame\bin\Debug\netcoreapp2.2\CardGame.deps.json
+C:\Data\source\repos\CardGame\CardGame-API\CardGame\CardGame\bin\Debug\netcoreapp2.2\CardGame.runtimeconfig.json
+C:\Data\source\repos\CardGame\CardGame-API\CardGame\CardGame\bin\Debug\netcoreapp2.2\CardGame.runtimeconfig.dev.json
+C:\Data\source\repos\CardGame\CardGame-API\CardGame\CardGame\bin\Debug\netcoreapp2.2\CardGame.dll
+C:\Data\source\repos\CardGame\CardGame-API\CardGame\CardGame\obj\Debug\netcoreapp2.2\CardGame.csprojAssemblyReference.cache
+C:\Data\source\repos\CardGame\CardGame-API\CardGame\CardGame\obj\Debug\netcoreapp2.2\CardGame.csproj.CoreCompileInputs.cache
+C:\Data\source\repos\CardGame\CardGame-API\CardGame\CardGame\obj\Debug\netcoreapp2.2\CardGame.RazorAssemblyInfo.cache
+C:\Data\source\repos\CardGame\CardGame-API\CardGame\CardGame\obj\Debug\netcoreapp2.2\CardGame.RazorAssemblyInfo.cs
+C:\Data\source\repos\CardGame\CardGame-API\CardGame\CardGame\obj\Debug\netcoreapp2.2\CardGame.AssemblyInfoInputs.cache
+C:\Data\source\repos\CardGame\CardGame-API\CardGame\CardGame\obj\Debug\netcoreapp2.2\CardGame.AssemblyInfo.cs
+C:\Data\source\repos\CardGame\CardGame-API\CardGame\CardGame\obj\Debug\netcoreapp2.2\CardGame.RazorTargetAssemblyInfo.cache
