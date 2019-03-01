@@ -21,6 +21,8 @@ namespace CardGame.Interfaces
 
         Task<bool> EmailRegister(string email, string username, string name, string password);
 
-        Task<bool> CheckUsername(string username);
+        Task<bool> UsernameExists(string username);
+
+        Task<bool> EmailExists(string email);
     }
 }

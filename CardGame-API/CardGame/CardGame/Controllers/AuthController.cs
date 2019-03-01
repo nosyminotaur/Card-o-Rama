@@ -26,6 +26,7 @@ namespace CardGame.Controllers
             _configuration = configuration;
         }
 
+        [HttpPost("g-login")]
         public async Task<IActionResult> GoogleLogin([FromBody]GoogleUserIn userIn)
         {
             await _userRepo.GoogleLogin(userIn.idToken, userIn.username, userIn.googleEmail);
@@ -43,6 +44,7 @@ namespace CardGame.Controllers
             return BadRequest();
         }
 
+        [HttpPost("email-login")]
         public async Task<IActionResult> EmailLogin([FromBody]EmailUserLoginIn userIn)
         {
             var result = await _userRepo.EmailLogin(userIn.Email, userIn.Username, userIn.Password);
@@ -62,6 +64,7 @@ namespace CardGame.Controllers
             return BadRequest();
         }
 
+        [HttpPost("email-register")]
         public async Task<IActionResult> EmailRegister([FromBody]EmailUserRegisterIn userIn)
         {
             var result = await _userRepo.EmailRegister(userIn.Email, userIn.Username, userIn.Name, userIn.Password);
@@ -72,9 +75,21 @@ namespace CardGame.Controllers
             return BadRequest();
         }
 
+        [HttpGet("check-username")]
         public async Task<IActionResult> UsernameCheck([FromQuery]string username)
         {
-            bool result = await _userRepo.CheckUsername(username);
+            bool result = await _userRepo.UsernameExists(username);
+
+            return Ok(new
+            {
+                Exists = result
+            });
+        }
+
+        [HttpGet("email-exists")]
+        public async Task<IActionResult> EmailCheck([FromQuery]string email)
+        {
+            bool result = await _userRepo.EmailExists(email);
 
             return Ok(new
             {

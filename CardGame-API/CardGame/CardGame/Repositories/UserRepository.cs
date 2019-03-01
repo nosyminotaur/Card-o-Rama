@@ -132,5 +132,25 @@ namespace CardGame.Repositories
 
             return true;
         }
+
+        public async Task<bool> UsernameExists(string username)
+        {
+            User user = await _manager.FindByNameAsync(username);
+
+            if (user == null)
+                return false;
+
+            return true;
+        }
+
+        public async Task<bool> EmailExists(string email)
+        {
+            User user = await _manager.FindByEmailAsync(email);
+
+            if (user == null)
+                return false;
+
+            return true;
+        }
     }
 }
