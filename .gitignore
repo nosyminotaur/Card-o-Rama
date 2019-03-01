@@ -1,0 +1,5 @@
+
+*.lock
+CardGame-API/CardGame/.vs/
+*.ide-shm
+*.ide-wal
