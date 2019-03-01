@@ -80,5 +80,57 @@ namespace CardGame.Repositories
 
             await _manager.CreateAsync(newUser);
         }
+
+        public async Task<bool> EmailLogin(string email, string username, string password)
+        {
+            //Find if username exists
+            var result = await _manager.FindByNameAsync(username);
+
+            //If user exists already, return bad request
+            if (result == null)
+                throw new ApiException(Exceptions.UserEmailExists, System.Net.HttpStatusCode.BadRequest, "User Email Exists!");
+
+            result = await _manager.FindByEmailAsync(email);
+
+            if (result == null)
+                throw new ApiException(Exceptions.UserNotFound, System.Net.HttpStatusCode.BadRequest, "User email not found!");
+
+            var isValid = await _manager.CheckPasswordAsync(result, password);
+
+            if (isValid)
+                return true;
+
+            return false;
+        }
+
+        public async Task<bool> EmailRegister(string email, string username, string name, string password)
+        {
+            //Find if username exists
+            var result = await _manager.FindByNameAsync(username);
+
+            //If user exists already, return bad request
+            if (result != null)
+                throw new ApiException(Exceptions.UsernameExists, System.Net.HttpStatusCode.BadRequest, "Username exists!");
+
+            result = await _manager.FindByEmailAsync(email);
+            if (result != null)
+                throw new ApiException(Exceptions.UserEmailExists, System.Net.HttpStatusCode.BadRequest, "Email exists");
+
+            //Create a new User
+            User newUser = new User
+            {
+                UserName = username,
+                Email = email,
+                Id = Guid.NewGuid().ToString(),
+                Name = name
+            };
+
+            var createResult = await _manager.CreateAsync(newUser, password);
+
+            if (createResult != IdentityResult.Success)
+                return false;
+
+            return true;
+        }
     }
 }

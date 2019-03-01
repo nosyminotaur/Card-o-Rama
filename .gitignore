@@ -3,3 +3,12 @@
 CardGame-API/CardGame/.vs/
 *.ide-shm
 *.ide-wal
+*.cache
+*.props
+*.targets
+CardGame-API/CardGame/.vs/CardGame/v15/Server/sqlite3/storage.ide-wal
+CardGame-API/CardGame/.vs/CardGame/v15/Server/sqlite3/storage.ide
+CardGame-API/CardGame/CardGame/obj/CardGame.csproj.nuget.cache
+CardGame-API/CardGame/CardGame/obj/CardGame.csproj.nuget.g.props
+CardGame-API/CardGame/CardGame/obj/CardGame.csproj.nuget.g.targets
+CardGame-API/CardGame/CardGame/obj/Debug/netcoreapp2.2/CardGame.assets.cache

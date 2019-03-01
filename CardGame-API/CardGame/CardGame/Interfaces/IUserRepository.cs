@@ -16,5 +16,11 @@ namespace CardGame.Interfaces
         /// <param name="googleEmail"></param>
         /// <returns></returns>
         Task GoogleLogin(string idToken, string username, string googleEmail);
+
+        Task<bool> EmailLogin(string email,string username, string password);
+
+        Task<bool> EmailRegister(string email, string username, string name, string password);
+
+        Task<bool> CheckUsername(string username);
     }
 }
