@@ -9,3 +9,6 @@ C:\Data\source\repos\CardGame\CardGame-API\CardGame\CardGame\obj\Debug\netcoreap
 C:\Data\source\repos\CardGame\CardGame-API\CardGame\CardGame\obj\Debug\netcoreapp2.2\CardGame.AssemblyInfoInputs.cache
 C:\Data\source\repos\CardGame\CardGame-API\CardGame\CardGame\obj\Debug\netcoreapp2.2\CardGame.AssemblyInfo.cs
 C:\Data\source\repos\CardGame\CardGame-API\CardGame\CardGame\obj\Debug\netcoreapp2.2\CardGame.RazorTargetAssemblyInfo.cache
+C:\Data\source\repos\CardGame\CardGame-API\CardGame\CardGame\bin\Debug\netcoreapp2.2\CardGame.pdb
+C:\Data\source\repos\CardGame\CardGame-API\CardGame\CardGame\obj\Debug\netcoreapp2.2\CardGame.dll
+C:\Data\source\repos\CardGame\CardGame-API\CardGame\CardGame\obj\Debug\netcoreapp2.2\CardGame.pdb
