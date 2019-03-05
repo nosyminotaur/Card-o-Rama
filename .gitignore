@@ -12,3 +12,4 @@ CardGame-API/CardGame/CardGame/obj/CardGame.csproj.nuget.cache
 CardGame-API/CardGame/CardGame/obj/CardGame.csproj.nuget.g.props
 CardGame-API/CardGame/CardGame/obj/CardGame.csproj.nuget.g.targets
 CardGame-API/CardGame/CardGame/obj/Debug/netcoreapp2.2/CardGame.assets.cache
+CardGame-API\CardGame\CardGame\ClientApp\node_modules

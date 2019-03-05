@@ -15,7 +15,7 @@ namespace CardGame.Controllers
 {
     //Using APIController allows us to not validate Model state because it is done automatically
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api")]
     public class AuthController : ControllerBase
     {
         private IUserRepository _userRepo;
@@ -31,18 +31,26 @@ namespace CardGame.Controllers
         [HttpPost("g-login")]
         public async Task<IActionResult> GoogleLogin([FromBody]GoogleUserIn userIn)
         {
+            Console.WriteLine("-----------STARTING GOOGLE LOGIN");
+
             await _userRepo.GoogleLogin(userIn.idToken, userIn.username, userIn.googleEmail);
 
             string key = _configuration.GetSection("SecretKey").ToString();
             double expireTime = Double.Parse(_configuration.GetSection("ExpireTime").ToString());
             string token = JwtHelper.CreateJwtToken(userIn.username, userIn.googleEmail, key, expireTime);
 
+            Console.WriteLine("-----------ENDING GOOGLE LOGIN");
+
             if (token != null)
+            {
+                Console.WriteLine("-----------GOOGLE LOGIN ENDED WITH OK");
                 return Ok(new
                 {
                     token
                 });
+            }
 
+            Console.WriteLine("-----------GOOGLE LOGIN ENDED WITH BAD REQUEST");
             return BadRequest();
         }
 

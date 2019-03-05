@@ -12,3 +12,17 @@ C:\Data\source\repos\CardGame\CardGame-API\CardGame\CardGame\obj\Debug\netcoreap
 C:\Data\source\repos\CardGame\CardGame-API\CardGame\CardGame\bin\Debug\netcoreapp2.2\CardGame.pdb
 C:\Data\source\repos\CardGame\CardGame-API\CardGame\CardGame\obj\Debug\netcoreapp2.2\CardGame.dll
 C:\Data\source\repos\CardGame\CardGame-API\CardGame\CardGame\obj\Debug\netcoreapp2.2\CardGame.pdb
+C:\Users\fabio\Desktop\MyGitRepos\ASP.NET\Card-o-Rama\CardGame-API\CardGame\CardGame\bin\Debug\netcoreapp2.2\CardGame.deps.json
+C:\Users\fabio\Desktop\MyGitRepos\ASP.NET\Card-o-Rama\CardGame-API\CardGame\CardGame\bin\Debug\netcoreapp2.2\CardGame.runtimeconfig.json
+C:\Users\fabio\Desktop\MyGitRepos\ASP.NET\Card-o-Rama\CardGame-API\CardGame\CardGame\bin\Debug\netcoreapp2.2\CardGame.runtimeconfig.dev.json
+C:\Users\fabio\Desktop\MyGitRepos\ASP.NET\Card-o-Rama\CardGame-API\CardGame\CardGame\bin\Debug\netcoreapp2.2\CardGame.dll
+C:\Users\fabio\Desktop\MyGitRepos\ASP.NET\Card-o-Rama\CardGame-API\CardGame\CardGame\bin\Debug\netcoreapp2.2\CardGame.pdb
+C:\Users\fabio\Desktop\MyGitRepos\ASP.NET\Card-o-Rama\CardGame-API\CardGame\CardGame\obj\Debug\netcoreapp2.2\CardGame.csprojAssemblyReference.cache
+C:\Users\fabio\Desktop\MyGitRepos\ASP.NET\Card-o-Rama\CardGame-API\CardGame\CardGame\obj\Debug\netcoreapp2.2\CardGame.csproj.CoreCompileInputs.cache
+C:\Users\fabio\Desktop\MyGitRepos\ASP.NET\Card-o-Rama\CardGame-API\CardGame\CardGame\obj\Debug\netcoreapp2.2\CardGame.RazorAssemblyInfo.cache
+C:\Users\fabio\Desktop\MyGitRepos\ASP.NET\Card-o-Rama\CardGame-API\CardGame\CardGame\obj\Debug\netcoreapp2.2\CardGame.RazorAssemblyInfo.cs
+C:\Users\fabio\Desktop\MyGitRepos\ASP.NET\Card-o-Rama\CardGame-API\CardGame\CardGame\obj\Debug\netcoreapp2.2\CardGame.AssemblyInfoInputs.cache
+C:\Users\fabio\Desktop\MyGitRepos\ASP.NET\Card-o-Rama\CardGame-API\CardGame\CardGame\obj\Debug\netcoreapp2.2\CardGame.AssemblyInfo.cs
+C:\Users\fabio\Desktop\MyGitRepos\ASP.NET\Card-o-Rama\CardGame-API\CardGame\CardGame\obj\Debug\netcoreapp2.2\CardGame.RazorTargetAssemblyInfo.cache
+C:\Users\fabio\Desktop\MyGitRepos\ASP.NET\Card-o-Rama\CardGame-API\CardGame\CardGame\obj\Debug\netcoreapp2.2\CardGame.dll
+C:\Users\fabio\Desktop\MyGitRepos\ASP.NET\Card-o-Rama\CardGame-API\CardGame\CardGame\obj\Debug\netcoreapp2.2\CardGame.pdb
