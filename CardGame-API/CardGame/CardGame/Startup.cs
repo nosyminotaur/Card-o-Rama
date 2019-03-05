@@ -45,7 +45,7 @@ namespace CardGame
             services.AddIdentityCore<User>().AddEntityFrameworkStores<UserContext>();
 
             //Provide IUserRepository to controllers
-            services.AddTransient<IUserRepository, UserRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
 
             //JWT Auth
             var key = Encoding.ASCII.GetBytes(Configuration.GetSection("SecretKey").Value);

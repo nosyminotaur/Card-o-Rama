@@ -2,6 +2,7 @@
 using CardGame.Interfaces;
 using CardGame.Models;
 using CardGame.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -26,6 +27,7 @@ namespace CardGame.Controllers
             _configuration = configuration;
         }
 
+        [AllowAnonymous]
         [HttpPost("g-login")]
         public async Task<IActionResult> GoogleLogin([FromBody]GoogleUserIn userIn)
         {
@@ -64,6 +66,7 @@ namespace CardGame.Controllers
             return BadRequest();
         }
 
+        [AllowAnonymous]
         [HttpPost("email-register")]
         public async Task<IActionResult> EmailRegister([FromBody]EmailUserRegisterIn userIn)
         {
@@ -75,6 +78,7 @@ namespace CardGame.Controllers
             return BadRequest();
         }
 
+        [AllowAnonymous]
         [HttpGet("check-username")]
         public async Task<IActionResult> UsernameCheck([FromQuery]string username)
         {
@@ -86,6 +90,7 @@ namespace CardGame.Controllers
             });
         }
 
+        [AllowAnonymous]
         [HttpGet("email-exists")]
         public async Task<IActionResult> EmailCheck([FromQuery]string email)
         {
